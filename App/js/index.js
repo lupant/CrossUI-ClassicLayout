@@ -73,6 +73,20 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.ctl_layout13.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"input")
+                .setName("input")
+                .setLeft("6.857142857142857em")
+                .setTop("6.857142857142857em")
+                .setWidth("18em")
+                .setHeight("5.40952380952381em")
+                .setLabelSize("8em")
+                .setLabelCaption("Nuovo elemento\n")
+                .setMultiLines(true),
+                "main"
+            );
+            
+            host.ctl_layout5.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button5")
                 .setDirtyMark(false)
@@ -81,20 +95,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("22.857142857142858em")
                 .setWidth("10.59047619047619em")
                 .setHeight("5.104761904761904em")
-                .setCaption("Ciao!")
-            );
-            
-            host.ctl_layout13.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"input")
-                .setName("input")
-                .setLeft("6.095238095238095em")
-                .setTop("7.619047619047619em")
-                .setWidth("18em")
-                .setHeight("5.40952380952381em")
-                .setLabelSize("8em")
-                .setLabelCaption("Nuovo elemento\n")
-                .setMultiLines(true),
+                .setCaption("Ciao!"),
                 "main"
             );
             
