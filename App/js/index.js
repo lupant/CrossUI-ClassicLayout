@@ -87,20 +87,46 @@ xui.Class('App', 'xui.Module',{
                         "type" : "other",
                         "target" : "msg",
                         "args" : [
-                            "{getCookies()}",
+                            "getCookies()}",
                             "Ciao",
                             200,
                             5000
                         ],
                         "method" : "message",
                         "event" : 1
-                    }
+                    },
+                    "_xui_ui_button5_onclick"
                 ]),
+                "main"
+            );
+            
+            host.ctl_layout13.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input21")
+                .setLeft("6.095238095238095em")
+                .setTop("7.619047619047619em")
+                .setWidth("18em")
+                .setHeight("5.40952380952381em")
+                .setLabelSize("8em")
+                .setLabelCaption("\n")
+                .setMultiLines(true),
                 "main"
             );
             
             return children;
             // ]]Code created by CrossUI RAD Studio
+        },
+        /**
+         * Fired when user click it
+         * @method onClick [xui.UI.Button event]
+         * @param {xui.UIProfile.} profile  The current control's profile object
+         * @param {Event} e , Dom event object
+         * @param {Element.xui} src  id or Dom Element
+         * @param {} value  Object
+        */
+        _xui_ui_button5_onclick:function(profile, e, src, value){
+            var ns = this, uictrl = profile.boxing();
+            this.ctl_layout13.setDisplay("ciao");
         }
     }
 });
