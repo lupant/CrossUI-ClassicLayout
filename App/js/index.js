@@ -75,6 +75,7 @@ xui.Class('App', 'xui.Module',{
             host.ctl_layout13.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button5")
+                .setDirtyMark(false)
                 .setDock("center")
                 .setLeft("13.714285714285714em")
                 .setTop("22.857142857142858em")
@@ -87,7 +88,7 @@ xui.Class('App', 'xui.Module',{
                         "type" : "other",
                         "target" : "msg",
                         "args" : [
-                            "getCookies()}",
+                            "{page.input}",
                             "Ciao",
                             200,
                             5000
@@ -102,13 +103,14 @@ xui.Class('App', 'xui.Module',{
             
             host.ctl_layout13.append(
                 xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input21")
+                .setHost(host,"input")
+                .setName("input")
                 .setLeft("6.095238095238095em")
                 .setTop("7.619047619047619em")
                 .setWidth("18em")
                 .setHeight("5.40952380952381em")
                 .setLabelSize("8em")
-                .setLabelCaption("\n")
+                .setLabelCaption("Nuovo elemento\n")
                 .setMultiLines(true),
                 "main"
             );
@@ -126,7 +128,7 @@ xui.Class('App', 'xui.Module',{
         */
         _xui_ui_button5_onclick:function(profile, e, src, value){
             var ns = this, uictrl = profile.boxing();
-            this.ctl_layout13.setDisplay("ciao");
+            this.input.setDisplay("ciao");
         }
     }
 });
