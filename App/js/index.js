@@ -82,23 +82,6 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("10.59047619047619em")
                 .setHeight("5.104761904761904em")
                 .setCaption("Ciao!")
-                .onClick([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "other",
-                        "target" : "msg",
-                        "args" : [
-                            "{page.input}",
-                            "Ciao",
-                            200,
-                            5000
-                        ],
-                        "method" : "message",
-                        "event" : 1
-                    },
-                    "_xui_ui_button5_onclick"
-                ]),
-                "main"
             );
             
             host.ctl_layout13.append(
