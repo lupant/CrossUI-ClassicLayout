@@ -95,7 +95,8 @@ xui.Class('App', 'xui.Module',{
                 .setTop("22.857142857142858em")
                 .setWidth("10.59047619047619em")
                 .setHeight("5.104761904761904em")
-                .setCaption("Ciao!"),
+                .setCaption("Ciao!")
+                .onClick("_xui_ui_button5_onclick"),
                 "main"
             );
             
